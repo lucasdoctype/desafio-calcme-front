@@ -1,0 +1,43 @@
+<div class="container mt-3">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="container d-flex justify-content-center">
+      <div class="row shadow-sm rounded border mb-3 card-crud">
+        <div class="col mt-4">
+          <h1>Cadastro de Usuário</h1>
+          <p>
+            Por favor , preencha todos os dados abaixo para cadastrarmos suas
+            informações em nosso sistema.
+          </p>
+          <hr />
+        </div>
+        <div class="col-md-12 mb-2">
+          <label for="" class="p">Nome*:</label>
+          <input type="text" class="form-control" formControlName="name" />
+        </div>
+        <div class="col-md-12 mb-2">
+          <label for="" class="p">E-mail*:</label>
+          <input type="email" class="form-control" formControlName="email" />
+        </div>
+        <div class="col-md-12 mb-2">
+          <label for="" class="p">Telefone Celular*:</label>
+          <input
+            mask="(00) 00000-0000"
+            type="text"
+            class="form-control"
+            formControlName="phone"
+          />
+        </div>
+        <div class="col-md-12 mt-5 mb-3">
+          <button
+            type="submit"
+            class="btn btn-primary btn-block"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- row d-flex justify-content-center -->

@@ -1,0 +1,14 @@
+.card-crud {
+  width: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-crud {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .card-crud {
+    width: 100%;
+  }
+}
